@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しろくまクリッカー</title>
+    <!-- cssfile -->
+    <link rel="stylesheet" href="css/game-main.css">
+</head>
+<body>
+    <div class="center"><h1><span onclick="pushSirokumaTitle();" style="user-select: none;">しろくま</span><span onclick="pushClicker();" style="user-select: none;">クリッカー<span></span></h1></div>
+
+    <div class="clickerw-main">
+        <div class="clickerw-top">
+            <span style="font-size: xx-large;">しろくまクリッカー</span>
+            <span style="font-size: small;">&nbsp;&nbsp;version:&nbsp;1.0.0(beta)&nbsp;bulid1001</span>
+        </div>
+        <div class="clickerw-picturebox" onclick="pushSirokuma();">
+            <img src="img/sirokuma.jpg" class="clickerw-clickpicture" onclick="pushSirokuma();">
+        </div>
+        <div class="clickerw-hyouji">
+            <span style="font-size: xx-large;" id="pointHyouji">0 しろくま</span>
+        </div>
+        <div class="clickerw-bottom">
+            <span style="font-size: small;">Copyright (C) 2021 Nikachu All rights reserved.</span>
+        </div>
+    </div>
+    <script src="js/onload.js"></script>
+    <script src="js/clicker.js"></script>
+</body>
+</html>

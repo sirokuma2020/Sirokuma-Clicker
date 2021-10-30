@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body{
+    width: 900px;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.clickerw-main{
+    width: 900px;
+    height: 600px;
+    border: solid;
+    border-color: black;
+    position: relative;
+}
+.clickerw-top{
+    width: 900px;
+    height: auto;
+    background-color: #4fc3f7;
+    position: absolute;
+}
+.clickerw-bottom{
+    width: 900px;
+    height: auto;
+    background-color: #4fc3f7;
+    bottom: 0px;
+    position: absolute;
+}
+.clickerw-body{
+    top: 45.56px;
+    position: absolute;
+}
+.clickerw-clickpicture{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+.clickerw-clickpicture:active{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+.clickerw-picturebox:active{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    top: 80px;
+    left: 310px;
+    position: absolute;
+}
+.clickerw-picturebox{
+    top: 70px;
+    left: 300px;
+    position: absolute;
+}
+.clickerw-hyouji{
+    margin-top: 400px;
+    text-align: center;
+}
