@@ -66,3 +66,15 @@ body{
     margin-top: 400px;
     text-align: center;
 }
+
+
+.clickerw-skill{
+    top: 70px;
+    left: 630px;
+    position: absolute;
+}
+
+.skill-menu{
+    width: 250px;
+    height: 207px;
+}

@@ -14,7 +14,7 @@
     <div class="clickerw-main">
         <div class="clickerw-top">
             <span style="font-size: xx-large;">しろくまクリッカー</span>
-            <span style="font-size: small;">&nbsp;&nbsp;version:&nbsp;1.0.0(beta)&nbsp;bulid1001</span>
+            <span style="font-size: small;">&nbsp;&nbsp;version:&nbsp;1.1.0&nbsp;bulid1101</span>
         </div>
         <div class="clickerw-picturebox" onclick="pushSirokuma();">
             <img src="img/sirokuma.jpg" class="clickerw-clickpicture" onclick="pushSirokuma();">
@@ -22,11 +22,26 @@
         <div class="clickerw-hyouji">
             <span style="font-size: xx-large;" id="pointHyouji">0 しろくま</span>
         </div>
+        <div class="clickerw-skill">
+            <select name="example2" size="8" class="skill-menu">
+                <option value="" style="font-size: large;">スキル</option>
+                <option value="x10 (コスト100)" onclick="skillX10();">x10 (コスト100)</option>
+                <option value="x100 (コスト10,000)" onclick="skillX100();">x100 (コスト10,000)</option>
+                <option value="x1,000 (コスト100,000)" onclick="skillX1k();">x1,000 (コスト100,000)</option>
+                <option value="x10,000 (コスト1,000,000)" onclick="skillX10k();">x10,000 (コスト1,000,000)</option>
+                <option value="x100,000 (コスト10,000,000)" onclick="skillX100k();">x100,000 (コスト10,000,000)</option>
+                <option value="x1,000,000 (コスト100,000,000)" onclick="skillX1000k();">x1,000,000 (コスト100,000,000)</option>
+                <option value="x10,000,000 (コスト1,000,000,000)" onclick="skillX10000k();">x10,000,000 (コスト1,000,000,000)</option>
+                <option value="x100,000,000 (コスト10,000,000,000)" onclick="skillX100000k();">x100,000,000 (コスト10,000,000,000)</option>
+            </select>
+        </div>
         <div class="clickerw-bottom">
             <span style="font-size: small;">Copyright (C) 2021 Nikachu All rights reserved.</span>
         </div>
     </div>
     <script src="js/onload.js"></script>
     <script src="js/clicker.js"></script>
+    <script src="js/console.command.js"></script> 
+    <script src="js/skill.js"></script>
 </body>
 </html>
