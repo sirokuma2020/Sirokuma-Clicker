@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>しろくまクリッカー</title>
     <!-- cssfile -->
+    <link rel="stylesheet" href="css/reboot.css">
     <link rel="stylesheet" href="css/game-main.css">
+    <style id="darkmode"></style>
 </head>
 <body>
-    <div class="center"><h1><span>しろくま</span><span>クリッカー<span></span></h1></div>
-
+    <div class="center header-title"><h1><span onclick="pushSirokumaTitle();" style="user-select: none;">しろくま</span><span onclick="pushClicker();" style="user-select: none;">クリッカー<span></span></h1></div>
     <div class="clickerw-main">
         <div class="clickerw-top">
             <span style="font-size: xx-large;">しろくまクリッカー</span>
-            <span style="font-size: small;">&nbsp;&nbsp;version:&nbsp;1.1.0&nbsp;bulid1101</span>
+            <span style="font-size: small;">&nbsp;&nbsp;version:&nbsp;2.0.0(beta)&nbsp;bulid2001</span>
+        </div>
+        <div class="clickerw-save">
+            <button onclick="cookiewrite();">セーブ</button>
+        </div>
+        <div class="clickerw-autosave">
+            <span id="autosave-text"></span>
+        </div>
+        <div class="clickerw-darkswitch">
+            <label><input type="checkbox" id="darkmodeSwitch">ダークモードに切り替える</label>
         </div>
         <div class="clickerw-picturebox" onclick="pushSirokuma();">
             <img src="img/sirokuma.jpg" class="clickerw-clickpicture" onclick="pushSirokuma();">
@@ -35,13 +45,35 @@
                 <option value="x100,000,000 (コスト10,000,000,000)" onclick="skillX100000k();">x100,000,000 (コスト10,000,000,000)</option>
             </select>
         </div>
+        <div class="clickerw-sisetu">
+            <select name="example2" size="8" class="sisetu-menu">
+                <option value="" style="font-size: large;">アイテム</option>
+                <option onclick="item1get();">シャープペン(コスト100)</option>
+                <option onclick="item2get();">元素記号したじき(コスト200)</option>
+                <option onclick="item3get();">家(コスト300)</option>
+                <option onclick="item4get();">コンピュータLv1(コスト500)</option>
+                <option onclick="item5get();">コンピュータLv2(コスト800)</option>
+                <option onclick="item6get();">コンピュータLv3(コスト1000)</option>
+                <option onclick="item7get();">釣り場(コスト1500)</option>
+                <option onclick="item8get();">銀行(コスト2000)</option>
+                <option onclick="item9get();">雪(コスト2300)</option>
+                <option onclick="item10get();">クジラ(コスト2500)</option>
+                <option onclick="item11get();">コンピュータLv4(コスト3000)</option>
+                <option onclick="item12get();">コンピュータLv5(コスト4000)</option>
+            </select>
+        </div>
         <div class="clickerw-bottom">
             <span style="font-size: small;">Copyright (C) 2021 Nikachu All rights reserved.</span>
         </div>
     </div>
+
+    <script src="js/cookie.js"></script>
     <script src="js/onload.js"></script>
-    <script src="js/clicker.js"></script>
+
     <script src="js/console.command.js"></script>
     <script src="js/skill.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/clicker.js"></script>
+    <script src="js/save.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ body{
 .clickerw-top{
     width: 900px;
     height: auto;
+    padding: 5px 0 5px 0;
     background-color: #4fc3f7;
     position: absolute;
 }
@@ -34,47 +35,69 @@ body{
     position: absolute;
 }
 .clickerw-clickpicture{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     pointer-events: none;
     user-select: none;
-}
-.clickerw-clickpicture:active{
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 50%;
-    pointer-events: none;
-    user-select: none;
-}
-.clickerw-picturebox:active{
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    top: 80px;
-    left: 310px;
-    position: absolute;
 }
 .clickerw-picturebox{
     top: 70px;
-    left: 300px;
+    left: 50px;
+    position: absolute;
+
+}
+.clickerw-picturebox:active{
+    object-fit: cover;
+    top: 75px;
+    left: 55px;
     position: absolute;
 }
+
 .clickerw-hyouji{
-    margin-top: 400px;
-    text-align: center;
+    top: 80px;
+    left: 300px;
+    position: absolute;
 }
 
 
 .clickerw-skill{
-    top: 70px;
-    left: 630px;
+    top: 340px;
+    left: 320px;
     position: absolute;
 }
 
 .skill-menu{
-    width: 250px;
-    height: 207px;
+    width: auto;
+    height: auto;
+    font-size: small;
+}
+
+.sisetu-menu{
+    width: auto;
+    height: auto;
+    font-size: small;
+}
+
+.clickerw-sisetu{
+    top: 340px;
+    position: absolute;
+    left: 590px;
+}
+
+.clickerw-darkswitch{
+    top: 15px;
+    right: 10px;
+    position: absolute;
+}
+
+.header-title{
+    margin-top: 15px;
+}
+
+.clickerw-save{
+    top: 12px;
+    right: 225px;
+    position: absolute;
 }
