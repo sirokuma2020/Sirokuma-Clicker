@@ -12,3 +12,5 @@ function valueChange(event){
   }
 
   darkmodeSwitch.addEventListener('change', valueChange);
+
+  console.log('darkmode.js loaded.')

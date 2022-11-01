@@ -18,8 +18,8 @@ function pushSirokuma() { // しろくまが押されたとき
 }
 
 function updateHyouji(){ // 表示のアップデート用
-    document.getElementById('pointHyouji').innerHTML = sirokumapoint + "&nbsp;しろくま";
-    console.log("表示を更新しました！しろくま数は" + sirokumapoint + "です")
+    document.getElementById('sirokumaHyouji').innerHTML = sirokumapoint;
+    console.log("表示を更新しました！ しろくま数は" + sirokumapoint + "です")
 }
 
 // ------------------------------------------------
@@ -487,6 +487,58 @@ function item12get(){
         alert("しろくま数が" + item12cost + "に達していません。しろくま数を貯めてください。")
     }
 }
+function item13get(){
+    if(sirokumapoint >= item13cost){
+        sirokumapoint = sirokumapoint - item13cost;
+        item13kosuu = item13kosuu + 1;
+        item13cost = 1.08**item13kosuu*syokiitem13cost;;
+        item13cost = Math.floor(item13cost);
+        item13zouka =  2**item13upgradelevel*item13kosuu*item13seinou;
+        updateHyouji();
+        itemzoukasyori();
+        console.log("item13　現在の個数は" + item13kosuu + "で次の１個を買うためのコストは" + item13cost + "です。")
+        
+     
+    }
+    else{
+        alert("しろくま数が" + item13cost + "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item14get(){
+    if(sirokumapoint >= item14cost){
+        sirokumapoint = sirokumapoint - item14cost;
+        item14kosuu = item14kosuu + 1;
+        item14cost = 1.08**item14kosuu*syokiitem14cost;;
+        item14cost = Math.floor(item14cost);
+        item14zouka =  2**item14upgradelevel*item14kosuu*item14seinou;
+        updateHyouji();
+        itemzoukasyori();
+        console.log("item14　現在の個数は" + item14kosuu + "で次の１個を買うためのコストは" + item14cost + "です。")
+        
+     
+    }
+    else{
+        alert("しろくま数が" + item14cost + "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item15get(){
+    if(sirokumapoint >= item15cost){
+        sirokumapoint = sirokumapoint - item15cost;
+        item15kosuu = item15kosuu + 1;
+        item15cost = 1.08**item15kosuu*syokiitem15cost;;
+        item15cost = Math.floor(item15cost);
+        item15zouka =  2**item15upgradelevel*item15kosuu*item15seinou;
+        updateHyouji();
+        itemzoukasyori();
+        console.log("item15　現在の個数は" + item15kosuu + "で次の１個を買うためのコストは" + item15cost + "です。")
+        
+     
+    }
+    else{
+        alert("しろくま数が" + item15cost + "に達していません。しろくま数を貯めてください。")
+    }
+}
+
 
 function item1upgrade(){
     if(sirokumapoint >= item1upgradecost){ 
@@ -499,6 +551,162 @@ function item1upgrade(){
       
      else{
         alert("しろくま数が" + item1upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item2upgrade(){
+    if(sirokumapoint >= item2upgradecost){ 
+            sirokumapoint = sirokumapoint - item2upgradecost;
+            item2upgradelevel = item2upgradelevel + 1
+            item2zouka =  2**item2upgradelevel*item2kosuu*item2seinou;
+            item2upgradecost = 2**item2upgradelevel*syokiitem2upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item2upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item3upgrade(){
+    if(sirokumapoint >= item3upgradecost){ 
+            sirokumapoint = sirokumapoint - item3upgradecost;
+            item3upgradelevel = item3upgradelevel + 1
+            item3zouka =  2**item3upgradelevel*item3kosuu*item3seinou;
+            item3upgradecost = 2**item3upgradelevel*syokiitem3upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item3upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item4upgrade(){
+    if(sirokumapoint >= item4upgradecost){ 
+            sirokumapoint = sirokumapoint - item4upgradecost;
+            item4upgradelevel = item4upgradelevel + 1
+            item4zouka =  2**item4upgradelevel*item4kosuu*item4seinou;
+            item4upgradecost = 2**item4upgradelevel*syokiitem4upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item4upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item5upgrade(){
+    if(sirokumapoint >= item5upgradecost){ 
+            sirokumapoint = sirokumapoint - item5upgradecost;
+            item5upgradelevel = item5upgradelevel + 1
+            item5zouka =  2**item5upgradelevel*item4kosuu*item5seinou;
+            item5upgradecost = 2**item5upgradelevel*syokiitem5upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item5upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item6upgrade(){
+    if(sirokumapoint >= item6upgradecost){ 
+            sirokumapoint = sirokumapoint - item6upgradecost;
+            item6upgradelevel = item6upgradelevel + 1
+            item6zouka =  2**item6upgradelevel*item6kosuu*item6seinou;
+            item6upgradecost = 2**item6upgradelevel*syokiitem6upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item6upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item2upgrade(){
+    if(sirokumapoint >= item6upgradecost){ 
+            sirokumapoint = sirokumapoint - item6upgradecost;
+            item6upgradelevel = item6upgradelevel + 1
+            item6zouka =  2**item6upgradelevel*item6kosuu*item6seinou;
+            item6upgradecost = 2**item6upgradelevel*syokiitem6upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item6upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item7upgrade(){
+    if(sirokumapoint >= item7upgradecost){ 
+            sirokumapoint = sirokumapoint - item7upgradecost;
+            item7upgradelevel = item7upgradelevel + 1
+            item7zouka =  2**item7upgradelevel*item7kosuu*item7seinou;
+            item7upgradecost = 2**item7upgradelevel*syokiitem7upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item7upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item8upgrade(){
+    if(sirokumapoint >= item8upgradecost){ 
+            sirokumapoint = sirokumapoint - item8upgradecost;
+            item8upgradelevel = item8upgradelevel + 1
+            item8zouka =  2**item8upgradelevel*item8kosuu*item8seinou;
+            item8upgradecost = 2**item8upgradelevel*syokiitem8upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item8upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item9upgrade(){
+    if(sirokumapoint >= item9upgradecost){ 
+            sirokumapoint = sirokumapoint - item9upgradecost;
+            item9upgradelevel = item9upgradelevel + 1
+            item9zouka =  2**item9upgradelevel*item9kosuu*item9seinou;
+            item9upgradecost = 2**item9upgradelevel*syokiitem9upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item9upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item10upgrade(){
+    if(sirokumapoint >= item10upgradecost){ 
+            sirokumapoint = sirokumapoint - item10upgradecost;
+            item10upgradelevel = item2upgradelevel + 1
+            item10zouka =  2**item2upgradelevel*item1kosuu*item1seinou;
+            item10upgradecost = 2**item2upgradelevel*syokiitem2upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item2upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item2upgrade(){
+    if(sirokumapoint >= item2upgradecost){ 
+            sirokumapoint = sirokumapoint - item2upgradecost;
+            item2upgradelevel = item2upgradelevel + 1
+            item1zouka =  2**item2upgradelevel*item1kosuu*item1seinou;
+            item2upgradecost = 2**item2upgradelevel*syokiitem2upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item2upgradecost+ "に達していません。しろくま数を貯めてください。")
+    }
+}
+function item2upgrade(){
+    if(sirokumapoint >= item2upgradecost){ 
+            sirokumapoint = sirokumapoint - item2upgradecost;
+            item2upgradelevel = item2upgradelevel + 1
+            item1zouka =  2**item2upgradelevel*item1kosuu*item1seinou;
+            item2upgradecost = 2**item2upgradelevel*syokiitem2upgradecost;
+            itemzoukasyori();
+        }
+      
+     else{
+        alert("しろくま数が" + item2upgradecost+ "に達していません。しろくま数を貯めてください。")
     }
 }
 
@@ -574,7 +782,7 @@ item4seinou = 110;
 item5seinou = 230;
 item6seinou = 1250;
 item7seinou = 2500;
-item8seinou =12500;
+item8seinou = 12500;
 item9seinou = 25000;
 item10seinou = 125000;
 item11seinou = 250000;

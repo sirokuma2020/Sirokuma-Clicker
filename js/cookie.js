@@ -16,18 +16,6 @@ function cookiewrite(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     console.log("cookie writed.")
 
 }
@@ -43,7 +31,6 @@ function cookieload(){
     skillX1000Kkakutoku = localStorage.getItem('skillX1000Kkakutoku');
     skillX10000Kkakutoku = localStorage.getItem('skillX10000Kkakutoku');
     skillX100000Kkakutoku = localStorage.getItem('skillX100000Kkakutoku');
-  
 
     sirokumapoint = Number(sirokumapoint);
     skillplus = Number(skillplus);
@@ -89,3 +76,5 @@ function cookieload(){
     updateHyouji();
     console.log("cookie loaded.")
 }
+
+console.log('cookie.js loaded.')

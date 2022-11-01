@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+body{
+    width: 900px;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.clickerw-main{
+    width: 900px;
+    height: 600px;
+    border: solid;
+    border-color: black;
+    position: relative;
+}
+.clickerw-top{
+    width: 900px;
+    height: auto;
+    padding: 5px 0 5px 0;
+    background-color: #4fc3f7;
+    position: absolute;
+}
+.clickerw-bottom{
+    width: 900px;
+    height: auto;
+    background-color: #4fc3f7;
+    bottom: 0px;
+    position: absolute;
+}
+.clickerw-body{
+    top: 45.56px;
+    position: absolute;
+}
+.clickerw-clickpicture{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+.clickerw-picturebox{
+    top: 200px;
+    left: 50px;
+    position: absolute;
+
+}
+.clickerw-picturebox:active{
+    object-fit: cover;
+    top: 205px;
+    left: 55px;
+    position: absolute;
+}
+
+.clickerw-hyouji{
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    text-align: center;
+    width: 255px;
+}
+
+
+.clickerw-skill{
+    top: 340px;
+    left: 320px;
+    position: absolute;
+}
+
+.skill-menu{
+    width: auto;
+    height: auto;
+    font-size: small;
+}
+
+.sisetu-menu{
+    width: auto;
+    height: auto;
+    font-size: small;
+}
+
+.clickerw-darkswitch{
+    top: 15px;
+    right: 10px;
+    position: absolute;
+}
+
+.header-title{
+    margin-top: 15px;
+}
+
+.clickerw-save{
+    top: 12px;
+    right: 225px;
+    position: absolute;
+}
+/*  -----------------------------------------
+    建物系
+    ----------------------------------------- */
+.clickerw-sisetu{
+    top: 220px;
+    position: absolute;
+    left: 600px;
+    overflow: auto;
+    width: 300px;
+    height: 360px;
+}
+
+.sisetu-top{
+    width: 270px;
+    height: auto;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: cornsilk;
+    position: fixed;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sisetu-top-back{ /* ここ表示されてない　*/
+    width: 270px;
+    height: auto;
+    border: solid;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.sisetu-item{
+    width: 270px;
+    height: 50px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    padding-left: 10px;
+    display: flex;
+}
+    
+.sisetu-item-title{
+    font-size: larger;
+    padding: 5px 0 2px 2px;
+}
+
+.sisetu-item-sirokuma{
+    font-size: small;
+
+}
+
+/*  ----------------------------------------------------
+    スキル系
+    ----------------------------------------------------  */
+.clickerw-skill{
+    top: 46px;
+    position: absolute;
+    left: 600px;
+    overflow: auto;
+    width: 300px;
+    height: 177px;
+    
+}
+
+.skill-top{
+    width: 270px;
+    height: auto;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: cornsilk;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: fixed;
+}
+
+.skill-top-back{
+    width: 270px;
+    height: auto;
+    border: solid;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 56px 56px 56px 57px 57px;
+    grid-template-rows: 51px 51px 51px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "grid1 grid2 grid3 grid4 grid5"
+      "grid6 grid7 grid8 grid9 grid10"
+      "grid11 grid12 grid13 grid14 grid15";
+}
+
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+.grid3{
+    grid-area: grid3;
+}
+.grid4{
+    grid-area: grid4;
+}
+.grid5{
+    grid-area: grid5;
+}
+.grid6{
+    grid-area: grid6;
+}
+.grid7{
+    grid-area: grid7;
+}
+.grid8{
+    grid-area: grid8;
+}
+.grid9{
+    grid-area: grid9;
+}
+.grid10{
+    grid-area: grid10;
+}
+.grid11{
+    grid-area: grid11;
+}
+.grid12{
+    grid-area: grid12;
+}
+.grid13{
+    grid-area: grid13;
+}
+.grid14{
+    grid-area: grid14;
+}
+.grid15{
+    grid-area: grid15;
+}
+
+.grid-1-4-style{
+    border: solid;
+    border-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+.grid-5-style{
+    border: solid;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+  
+
+  
+.skill-item{
+    width: 54px;
+    height: 50px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    padding-left: 10px;
+    display: flex;
+}
+
+
+.skill-item-title{
+    font-size: larger;
+    padding: 5px 0 2px 2px;
+}
+
+.skill-item-sirokuma{
+    font-size: small;
+
+}
+
+
