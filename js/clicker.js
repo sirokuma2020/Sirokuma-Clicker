@@ -217,7 +217,7 @@ function skillX100000k() {
 <option onclick="item12get">コンピュータLv5(コスト4000)</option>
 */
 
-item1cost = 100; //シャープペン
+/*item1cost = 100; //シャープペン
 item2cost = 500; //したじき
 item3cost = 1000; //家
 item4cost = 5000; //こんぴゅーたlv1
@@ -254,7 +254,7 @@ item8zouka = 0;
 item9zouka = 0;
 item10zouka = 0;
 item11zouka = 0;
-item12zouka = 0;
+item12zouka = 0;*/
 
 item1upgradelevel = 0;
 item2upgradelevel = 0;
@@ -299,7 +299,6 @@ function item1get() {
         alert("しろくま数が" + item1cost + "に達していません。しろくま数を貯めてください。")
     }
 }
-
 function item2get() {
     if (sirokumapoint >= item2cost) {
         sirokumapoint = sirokumapoint - item2cost;
@@ -538,23 +537,36 @@ function item15get() {
         alert("しろくま数が" + item15cost + "に達していません。しろくま数を貯めてください。")
     }
 }
-let item_cost = []
-let item_kosuu = Array(15).findIndex(0,0)
-let item_zouka = []
-let item_seinou = []
-function item_buy(number) {
+let upgrade_open = [10, 25, 50, 100, 150, 250, 300, 450, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
+let item_cost = [10, 100, 5000, 50000, 100000/*5*/, 5000000, 200000000, 10000000000, 500000000000, 20000000000000/*10*/, 1000000000000000, 50000000000000000, 2000000000000000000, 100000000000000000000, 10000000000000000000000]
+let item_kosuu = Array(15).fill(0, 0)
+let item_zouka = Array(15).fill(0, 0)
+let item_seinou = [0.1, 1, 47, 450, 9000/*5*/, 420000, 1600000, 77000000, 3750000000, 14000000000000, 6700000000000, 325000000000000, 12600000000000000, 610000000000000000, 6000000000000000000000]
+function item_buy(number, kosuu) {
     if (sirokumapoint >= item_cost[number]) {
         item_kosuu[number] += 1
         sirokumapoint -= item_cost[number]
-        item_cost[number] = Math.floor(item_cost[number] * 1.08)
+        item_cost[number] = Math.floor(item_cost[number] * 1.1)
         item_update(number);
         item_zouka[number] = 2 ** upgrade_level[number] * item_kosuu[number] * item_seinou[number]
         itemzoukasyori();
+        if (item_kosuu >= upgrade_open[upgrade_level[number]]) {
+
+        }
+        if (item_kosuu >= upgrade_open[upgrade_level[number] + 1]) {
+
+        }
+        if (item_kosuu >= upgrade_open[upgrade_level[number] + 2]) {
+
+        }
+        if (item_kosuu >= upgrade_open[upgrade_level[number] + 3]) {
+
+        }
     }
 }
 let upgrade_cost_factor = [] //アイテムの値段に倍率をつけて値段を決定する
 let upgrade_cost_base = [] //倍率をかけるベースの値段
-let upgrade_level = []
+let upgrade_level = Array(15).fill(0, 0)
 
 function upgrade_buy(number) {
 
