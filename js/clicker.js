@@ -24,7 +24,17 @@ function updateHyouji() { // 表示のアップデート用
 // ------------------------------------------------
 // スキル用
 // ------------------------------------------------
-
+let skill_cost = []
+let skill_level = 0
+function skill_update() {
+    
+}
+function skill_buy() {
+    if (sirokumapoint >= skill_cost[skill_level]) {
+        sirokumapoint -= skill_cost[skill_level]
+        skill_level += 1
+    }
+}
 function skillX10() {
     if (sirokumapoint >= 100) {
         if (skillX10kakutoku == 0) {
@@ -197,52 +207,8 @@ function skillX100000k() {
 }
 
 // ------------------------------------------
-// アイテム
+// アイテム及びアップグレード
 // ------------------------------------------
-
-/*
-<option value="" style="font-size: large;">アイテム</option>
-<option onclick="item1get">シャープペン(コスト100)</option>
-<option onclick="item2get">元素記号したじき(コスト200)</option>
-<option onclick="item3get">家(コスト300)</option>
-<option onclick="item4get">コンピュータLv1(コスト500)</option>
-<option onclick="item5get">コンピュータLv2(コスト800)</option>
-<option onclick="item6get">コンピュータLv3(コスト1000)</option>
-<option onclick="item7get">釣り場(コスト1500)</option>
-<option onclick="item8get">銀行(コスト2000)</option>
-<option onclick="item9get">雪(コスト2300)</option>
-<option onclick="item10get">クジラ(コスト2500)</option>
-<option onclick="item11get">コンピュータLv4(コスト3000)</option>
-<option onclick="item12get">コンピュータLv5(コスト4000)</option>
-*/
-
-/*item1cost = 100; //シャープペン
-
-item1kosuu = 0; //シャープペン
-
-item1zouka = 0;*/
-
-item1upgradelevel = 0;
-
-item1upgradecost = 1500;
-
-function item1get() {
-    if (sirokumapoint >= item1cost) {
-        sirokumapoint = sirokumapoint - item1cost;
-        item1kosuu = item1kosuu + 1;
-        item1cost = 1.08 ** item1kosuu * syokiitem1cost;
-        item1cost = Math.floor(item1cost);
-        item1zouka = 2 ** item1upgradelevel * item1kosuu * item1seinou;
-        updateHyouji();
-        itemzoukasyori();
-        console.log("item1　現在の個数は" + item1kosuu + "で次の１個を買うためのコストは" + item1cost + "です。")
-
-
-    }
-    else {
-        alert("しろくま数が" + item1cost + "に達していません。しろくま数を貯めてください。")
-    }
-}
 
 function reset() {
     
@@ -294,21 +260,6 @@ function item_update(number) {
     document.querySelectorAll(".item-buyHyoujiNedan")[number - 1].innerHTML = `${item_cost[number - 1]}&nbsp;しろくま`
 }
 
-function item1upgrade() {
-    if (sirokumapoint >= item1upgradecost) {
-        sirokumapoint = sirokumapoint - item1upgradecost;
-        item1upgradelevel = item1upgradelevel + 1
-        item1zouka = 2 ** item1upgradelevel * item1kosuu * item1seinou;
-        item1upgradecost = 2 ** item1upgradelevel * syokiitem1upgradecost;
-        itemzoukasyori();
-    }
-
-    else {
-        alert("しろくま数が" + item1upgradecost + "に達していません。しろくま数を貯めてください。")
-    }
-}
-
-
 // プレループ
 function itemloopPre() {
     setInterval(itemloop, 1000);
@@ -323,103 +274,3 @@ function itemzoukasyori() {
         return a + b;
     });
 }
-function hensuusyori() {//itemcostとかをセーブデータをロードしたときに処理するよう　セーブデータの圧縮のため
-    item1zouka = 2 ** item1upgradelevel * item1kosuu * item1seinou
-    item2zouka = 2 ** item2upgradelevel * item2kosuu * item2seinou
-    item3zouka = 2 ** item3upgradelevel * item3kosuu * item3seinou
-    item4zouka = 2 ** item4upgradelevel * item4kosuu * item4seinou
-    item5zouka = 2 ** item5upgradelevel * item5kosuu * item5seinou
-    item6zouka = 2 ** item6upgradelevel * item6kosuu * item6seinou
-    item7zouka = 2 ** item7upgradelevel * item7kosuu * item7seinou
-    item8zouka = 2 ** item8upgradelevel * item8kosuu * item8seinou
-    item9zouka = 2 ** item9upgradelevel * item9kosuu * item9seinou
-    item10zouka = 2 ** item10upgradelevel * item10kosuu * item10seinou
-    item11zouka = 2 ** item11upgradelevel * item11kosuu * item11seinou
-    item12zouka = 2 ** item12upgradelevel * item12kosuu * item12seinou
-    item1cost = 1.08 ** item1kosuu * syokiitem1cost;
-    item1cost = Math.floor(item1cost);
-    item2cost = 1.08 ** item2kosuu * syokiitem2cost;
-    item2cost = Math.floor(item2cost);
-    item3cost = 1.08 ** item3kosuu * syokiitem3cost;
-    item3cost = Math.floor(item3cost);
-    item4cost = 1.08 ** item4kosuu * syokiitem4cost;
-    item4cost = Math.floor(item4cost);
-    item5cost = 1.08 ** item5kosuu * syokiitem5cost;
-    item5cost = Math.floor(item5cost);
-    item6cost = 1.08 ** item6kosuu * syokiitem6cost;
-    item6cost = Math.floor(item6cost);
-    item7cost = 1.08 ** item7kosuu * syokiitem7cost;
-    item7cost = Math.floor(item7cost);
-    item8cost = 1.08 ** item8kosuu * syokiitem8cost;
-    item8cost = Math.floor(item8cost);
-    item9cost = 1.08 ** item9kosuu * syokiitem9cost;
-    item9cost = Math.floor(item9cost);
-    item10cost = 1.08 ** item10kosuu * syokiitem10cost;
-    item10cost = Math.floor(item10cost);
-    item11cost = 1.08 ** item11kosuu * syokiitem11cost;
-    item11cost = Math.floor(item11cost);
-    item12cost = 1.08 ** item12kosuu * syokiitem12cost;
-    item12cost = Math.floor(item12cost);
-
-}
-//バランス調整するときはこれをかえるとアイテムの初期の値段を変えれる itemcostをこの役割で使うと初期の値段変えると値段がおかしくなるからやめて
-syokiitem1cost = 100;
-syokiitem2cost = 500;
-syokiitem3cost = 1000;
-syokiitem4cost = 5000;
-syokiitem5cost = 10000;
-syokiitem6cost = 50000;
-syokiitem7cost = 100000;
-syokiitem8cost = 500000;
-syokiitem9cost = 1000000;
-syokiitem10cost = 5000000;
-syokiitem11cost = 10000000;
-syokiitem12cost = 50000000;
-//バランス調整するときはこれをかえるとアイテムの1つ当たりの性能を変えられる
-item1seinou = 1;
-item2seinou = 7;
-item3seinou = 20;
-item4seinou = 110;
-item5seinou = 230;
-item6seinou = 1250;
-item7seinou = 2500;
-item8seinou = 12500;
-item9seinou = 25000;
-item10seinou = 125000;
-item11seinou = 250000;
-item12seinou = 1250000;
-//バランス調整するときはこれをかえるとアップグレードの初期の値段を変えれるupgradecostをこの役割で使うと初期の値段変えると値段がおかしくなるからやめて
-syokiitem1upgradecost = 1500;
-syokiitem2upgradecost = 7500;
-syokiitem3upgradecost = 15000;
-syokiitem4upgradecost = 75000;
-syokiitem5upgradecost = 150000;
-syokiitem6upgradecost = 750000;
-syokiitem7upgradecost = 1500000;
-syokiitem8upgradecost = 7500000;
-syokiitem9upgradecost = 15000000;
-syokiitem10upgradecost = 75000000;
-syokiitem11upgradecost = 150000000;
-syokiitem12upgradecost = 750000000;
-
-
-
-
-
-/*  バックアップです 2020/11/04 15:58 by nikachu
-function item1get(){
-    if(sirokumapoint >= item1cost){
-        sirokumapoint = sirokumapoint - item1cost;
-        item1kosuu = item1kosuu + 1;
-        item1cost = item1cost + item1kosuu * 1.38;
-        item1cost = Math.floor(item1cost);
-        updateHyouji();
-        
-        console.log(item1cost)
-    }
-    else{
-        alert("しろくま数が" + item1cost + "に達していません。しろくま数を貯めてください。")
-    }
-
-}
- */
