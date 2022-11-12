@@ -33,6 +33,8 @@ function skill_buy() {
     if (sirokumapoint >= skill_cost[skill_level]) {
         sirokumapoint -= skill_cost[skill_level]
         skill_level += 1
+        updateHyouji();
+        skillplus = 2 ** skill_level
     }
 }
 function skillX10() {
@@ -238,6 +240,9 @@ function item_buy(number, kosuu) {
         }
         if (item_kosuu >= upgrade_open[upgrade_level[number - 1] + 3]) {
 
+        }
+        if (number - 1== 0) {
+            
         }
     }
 }
