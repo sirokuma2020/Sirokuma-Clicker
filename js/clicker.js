@@ -34,185 +34,25 @@ function skill_buy() {
         sirokumapoint -= skill_cost[skill_level]
         skill_level += 1
         updateHyouji();
-        skillplus = 2 ** skill_level
+        skillplus = 4 ** skill_level
+    }
+    if (skill_level == 4) {
+        skillplus == item_zouka * item_kosuu[0] / 100
     }
 }
-function skillX10() {
-    if (sirokumapoint >= 100) {
-        if (skillX10kakutoku == 0) {
-            sirokumapoint = sirokumapoint - 100;
-            skillX10kakutoku = 1;
-            skillplus = 10;
-            updateHyouji();
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が100に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX100() {
-    if (sirokumapoint >= 10000) {
-        if (skillX100kakutoku == 0) {
-            if (skillX10kakutoku == 1) {
-                sirokumapoint = sirokumapoint - 10000;
-                skillX100kakutoku = 1;
-                skillplus = 100;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が10,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX1k() {
-    if (sirokumapoint >= 100000) {
-        if (skillX1Kkakutoku == 0) {
-            if (skillX100kakutoku == 1) {
-                sirokumapoint = sirokumapoint - 100000;
-                skillX1Kkakutoku = 1;
-                skillplus = 1000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が100,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX10k() {
-    if (sirokumapoint >= 1000000) {
-        if (skillX10Kkakutoku == 0) {
-            if (skillX1Kkakutoku == 1) {
-                sirokumapoint = sirokumapoint - 1000000;
-                skillX10Kkakutoku = 1;
-                skillplus = 10000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が1,000,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX100k() {
-    if (sirokumapoint >= 10000000) {
-        if (skillX100Kkakutoku == 0) {
-            if (skillX10Kkakutoku == 1) {
-                sirokumapoint = sirokumapoint - 10000000;
-                skillX100Kkakutoku = 1;
-                skillplus = 100000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が10,000,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX1000k() {
-    if (sirokumapoint >= 100000000) {
-        if (skillX1000Kkakutoku == 0) {
-            if (skillX100Kkakutoku == 1) {
-                sirokumapoint = sirokumapoint - 100000000;
-                skillX1000Kkakutoku = 1;
-                skillplus = 1000000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が100,000,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX10000k() {
-    if (sirokumapoint >= 1000000000) {
-        if (skillX10000Kkakutoku == 0) {
-            if (skillX1000Kkakutoku == 1) {
-                sirokumapoint = sirokumapoint - 1000000000;
-                skillX10000Kkakutoku = 1;
-                skillplus = 10000000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が1,000,000,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
-function skillX100000k() {
-    if (sirokumapoint >= 10000000000) {
-        if (skillX100000Kkakutoku == 0) {
-            if (skillX10000Kkakutoku == 1) {
-                sirokumapoint = sirokumapoint - 10000000000;
-                skillX100000Kkakutoku = 1;
-                skillplus = 100000000;
-                updateHyouji();
-            }
-            else {
-                alert("前のスキルを取ってください。")
-            }
-        }
-        else {
-            alert("すでに獲得しています！")
-        }
-    }
-    else {
-        alert("しろくま数が10,000,000,000に達していません。しろくま数を貯めてください。")
-    }
-}
-
 // ------------------------------------------
 // アイテム及びアップグレード
 // ------------------------------------------
 
 function reset() {
+     item_cost = [10, 100, 5000, 50000, 100000/*5*/, 5000000, 200000000, 10000000000, 500000000000, 20000000000000/*10*/, 1000000000000000, 50000000000000000, 2000000000000000000, 100000000000000000000, 10000000000000000000000]
+     item_kosuu = Array(15).fill(0, 0)
+     item_zouka = Array(15).fill(0, 0)
+     itemzouka = 0
+     upgrade_level = Array(15).fill(0, 0)
+     item_update();
+     updateHyouji();
+
     
 }
 let upgrade_open = [10, 25, 50, 100, 150, 250, 300, 450, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]

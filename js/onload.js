@@ -6,6 +6,10 @@ function onLoad() {
     console.log("最大値は9007199254740991[2^53]です")
     cookieload();
     itemloopPre();
+    for (let i = 1; i < 16; i++) {
+        item_update(i)
+        
+    }
 }
 
 console.log('onload.js loaded.')
