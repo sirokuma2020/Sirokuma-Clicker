@@ -16,16 +16,16 @@ function cookiewrite(){
 
 }
 function cookieload(){
-    sirokumapoint = localStorage.getItem('sirokumapoint');
-    skillplus = localStorage.getItem('skillplus');
+    sirokumapoint = parseInt(localStorage.getItem('sirokumapoint'),10);
+    skillplus = parseInt(localStorage.getItem('skillplus'),10);
     item_kosuu.forEach((element,index) => {
-        item_kosuu[element] = localStorage.getItem(`item_kosuu${index}`)
+        item_kosuu[element] = parseInt(localStorage.getItem(`item_kosuu${index}`),10)
     });
     upgrade_level.forEach((element,index) => {
-        upgrade_level[element] = localStorage.getItem(`upgrade_level${index}`)
+        upgrade_level[element] = parseInt(localStorage.getItem(`upgrade_level${index}`),10)
     });
     item_cost.forEach((element,index) => {
-        item_cost[element] = localStorage.getItem(`item_cost${index}`)
+        item_cost[element] = parseInt(localStorage.getItem(`item_cost${index}`),10)
     });
 
     console.log(localStorage);

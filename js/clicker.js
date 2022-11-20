@@ -50,7 +50,10 @@ function reset() {
      item_zouka = Array(15).fill(0, 0)
      itemzouka = 0
      upgrade_level = Array(15).fill(0, 0)
-     item_update();
+     for (let i = 1; i < 16; i++) {
+        item_update(i)
+        
+     }
      updateHyouji();
 
     
