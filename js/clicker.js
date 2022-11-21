@@ -2,15 +2,6 @@ sirokumapoint = 0;
 skillplus = 1;
 itemzouka = 0;
 
-skillX10kakutoku = 0;
-skillX100kakutoku = 0;
-skillX1Kkakutoku = 0;
-skillX10Kkakutoku = 0;
-skillX100Kkakutoku = 0;
-skillX1000Kkakutoku = 0;
-skillX10000Kkakutoku = 0;
-skillX100000Kkakutoku = 0;
-
 
 function pushSirokuma() { // しろくまが押されたとき
     sirokumapoint = sirokumapoint + skillplus;
@@ -45,16 +36,16 @@ function skill_buy() {
 // ------------------------------------------
 
 function reset() {
-     item_cost = [10, 100, 5000, 50000, 100000/*5*/, 5000000, 200000000, 10000000000, 500000000000, 20000000000000/*10*/, 1000000000000000, 50000000000000000, 2000000000000000000, 100000000000000000000, 10000000000000000000000]
-     item_kosuu = Array(15).fill(0, 0)
+     //item_cost = [10, 100, 5000, 50000, 100000/*5*/, 5000000, 200000000, 10000000000, 500000000000, 20000000000000/*10*/, 1000000000000000, 50000000000000000, 2000000000000000000, 100000000000000000000, 10000000000000000000000]
+     /*item_kosuu = Array(15).fill(0, 0)
      item_zouka = Array(15).fill(0, 0)
      itemzouka = 0
      upgrade_level = Array(15).fill(0, 0)
      for (let i = 1; i < 16; i++) {
         item_update(i)
-        
-     }
-     updateHyouji();
+    } */
+    localStorage.clear();
+    location.reload();
 
     
 }
