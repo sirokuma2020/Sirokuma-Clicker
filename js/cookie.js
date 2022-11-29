@@ -4,7 +4,7 @@ function cookiewrite(){
     console.log(item_cost)
     localStorage.setItem('sirokumapoint', sirokumapoint);
     localStorage.setItem('skillplus', skillplus);
-    localStorage.setItem('last_online', Math.floor(new Date().getTime() / 1000))
+    localStorage.setItem('last_online', BigInt(Math.floor(new Date().getTime() / 1000)))
     item_kosuu.forEach((element,index) => {
         localStorage.setItem(`item_kosuu${index}`,element)
     });
@@ -30,12 +30,12 @@ function cookieload(){
         
     }
     for (let i = 0; i < 15; i++) {
-        item_zouka[i] = 2 ** upgrade_level[i] * item_kosuu[i] * item_seinou[i]
+        item_zouka[i] = 2n ** upgrade_level[i] * item_kosuu[i] * item_seinou[i]
     }
         console.log(localStorage);
     updateHyouji();
     itemzoukasyori();
-    sirokumapoint += itemzouka * (Math.floor(new Date().getTime() / 1000) - last_online);
+    sirokumapoint += itemzouka * (BigInt(Math.floor(new Date().getTime() / 1000) - last_online));
 
     console.log("cookie loaded.")
 }
