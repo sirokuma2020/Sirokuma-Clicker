@@ -4,7 +4,7 @@ function cookiewrite(){
     console.log(item_cost)
     localStorage.setItem('sirokumapoint', sirokumapoint);
     localStorage.setItem('skillplus', skillplus);
-    localStorage.setItem('last_online', BigInt(Math.floor(new Date().getTime() / 1000)))
+    localStorage.setItem('last_online', BigInt(Math.floor(new Date().getTime() / 1000n)))
     item_kosuu.forEach((element,index) => {
         localStorage.setItem(`item_kosuu${index}`,element)
     });
