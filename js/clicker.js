@@ -58,7 +58,7 @@ function item_buy(number, kosuu) {
     if (sirokumapoint >= item_cost[number - 1]) {
         item_kosuu[number - 1] += 1n
         sirokumapoint -= item_cost[number - 1]
-        item_cost[number - 1] = Math.floor((item_cost[number - 1] * 11n / 10n))
+        item_cost[number - 1] =item_cost[number - 1] * 11n / 10n
         item_update(number);
         item_zouka[number - 1] = 2n ** upgrade_level[number - 1] * item_kosuu[number - 1] * item_seinou[number - 1]
         itemzoukasyori();
