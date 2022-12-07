@@ -35,7 +35,7 @@ function cookieload(){
         console.log(localStorage);
     updateHyouji();
     itemzoukasyori();
-    sirokumapoint += itemzouka * (BigInt(Math.floor(new Date().getTime() / 1000) - last_online));
+    sirokumapoint += itemzouka * (BigInt(Math.floor(new Date().getTime() / 1000n) - last_online));
 
     console.log("cookie loaded.")
 }
