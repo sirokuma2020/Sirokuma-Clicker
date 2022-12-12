@@ -14,6 +14,9 @@ function onLoad() {
         item_update(i)
         
     }
+    setInterval(() => {
+        
+    }, 60000);
 }
 
 console.log('onload.js loaded.')

@@ -1,310 +1,306 @@
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>しろくまクリッカー</title>
-    <link rel="stylesheet" href="css/reboot.css">
-    <link rel="stylesheet" href="css/gamemain.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しろくまクリッカー</title>
+  <link rel="stylesheet" href="css/reboot.css">
+  <link rel="stylesheet" href="css/gamemain.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-   <div class="clicker-ueSpace">
-     しろくまクリッカー
-     <span style="font-size: small;">
+  <div class="clicker-ueSpace">
+    しろくまクリッカー
+    <span style="font-size: small;">
       &nbsp;&nbsp;ver2.0.s0
     </span>
   </div>
-<div class="clicker-space">  
- <div class="click-space">
-     
-       <img src="img/sirokuma.png" class="clickSpace-sirokuma" onclick="pushSirokuma();">
-     
-     <div class="clickSpace-hyoujisirokuma">
-      <span id=sirokumaHyouji style="font-size: xx-large;">0</span>
-      <br>
-      <span style="font-size: large;">しろくま</span>
-    </div>
- </div>
- 
- <div class="clicker-centerSpace">
-<div class="clicker-centerUeSoace">
-  
-   
-  
-    <div class="center-container">
-      <div class="grid1 center-button">
+  <div class="clicker-space">
+    <div class="click-space">
 
-      </div>
-      <div class="grid4 center-button">
+      <img src="img/sirokuma.png" class="clickSpace-sirokuma" onclick="pushSirokuma();">
 
-      </div>
-      <div class="grid5 center-button">
-
-      </div>
-      <div class="grid8 center-button">
-
-      </div>
-      <div class="center center-moji">
-        
+      <div class="clickSpace-hyoujisirokuma">
+        <span id=sirokumaHyouji style="font-size: xx-large;">0</span>
+        <br>
+        <span style="font-size: large;">しろくま</span>
       </div>
     </div>
- 
-</div>
- </div>
- <div class="clicker-upgradeSpace">
-    <div class="clicker-ueUpgradeSpace">
-      <b>アップグレード</b>
+
+    <div class="clicker-centerSpace">
+      <div class="clicker-centerUeSoace">
+        <div class="center-container">
+          <div class="grid1 center-button">
+
+          </div>
+          <div class="grid4 center-button">
+
+          </div>
+          <div class="grid5 center-button">
+
+          </div>
+          <div class="grid8 center-button">
+
+          </div>
+          <div class="center center-moji">
+
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="clicker-uogradeBuy">
-      <div class="container">
-        <div class="grid-settei grid1">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: red;" onclick=""></i>
-         </div>
-        <div class="grid-settei grid2">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #ff4c00;"></i>
-        </div>
-        <div class="grid-settei grid3">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: rgb(253, 179, 191);"></i>
-        </div>
-        <div class="grid-settei grid4">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #ff7e01;"></i>
-        </div>
-        <div class="grid-settei grid5">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #ffbb01;"></i>
-        </div>
+    <div class="clicker-upgradeSpace">
+      <div class="clicker-ueUpgradeSpace">
+        <b>アップグレード</b>
+      </div>
+      <div class="clicker-uogradeBuy">
+        <div class="container">
+          <div class="grid-settei grid1">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: red;" onclick=""></i>
+          </div>
+          <div class="grid-settei grid2">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #ff4c00;"></i>
+          </div>
+          <div class="grid-settei grid3">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: rgb(253, 179, 191);"></i>
+          </div>
+          <div class="grid-settei grid4">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #ff7e01;"></i>
+          </div>
+          <div class="grid-settei grid5">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #ffbb01;"></i>
+          </div>
           <div class="grid-settei grid6">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #ffe700;"></i>
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #ffe700;"></i>
+          </div>
+          <div class="grid-settei grid7">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #aaff00;"></i>
+          </div>
+          <div class="grid-settei grid8">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #00cf49;"></i>
+          </div>
+          <div class="grid-settei grid9">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #02c5d3;"></i>
+          </div>
+          <div class="grid-settei grid10">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #028be0;"></i>
+          </div>
+          <div class="grid-settei grid11">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #016ee2;"></i>
+          </div>
+          <div class="grid-settei grid12">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #0210d1;"></i>
+          </div>
+          <div class="grid-settei grid13">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: #ad00b6;"></i>
+          </div>
+          <div class="grid-settei grid14">
+            <i class="far fa-hand-pointer upgrade-icon upgrade-iconGold"></i>
+          </div>
+          <div class="grid-settei grid15">
+            <i class="far fa-hand-pointer upgrade-icon" style="color: black;"></i>
+          </div>
+
         </div>
-        <div class="grid-settei grid7">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #aaff00;"></i>
+      </div>
+      <div class="item-buyUeSpace">
+        <b style="padding-top: 2px;">アイテム</b>
+      </div>
+      <div class="item-buySpace">
+        <div class="item-buyHyoujiSpace" onclick="item_buy(1);">
+          <div class="item-buy">
+            <img src="img/itempicture/item1.png">
+
+            <div class="item-buyHyouji">シャーペン
+              <div class="item-buyHyoujiNedan">1&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid8">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #00cf49;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(2);">
+          <div class="item-buy">
+            <img src="img/itempicture/item2.png">
+
+            <div class="item-buyHyouji">元素記号したじき
+              <div class="item-buyHyoujiNedan">2&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid9">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #02c5d3;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(3);">
+          <div class="item-buy">
+            <img src="img/itempicture/item3.png">
+
+            <div class="item-buyHyouji">家
+              <div class="item-buyHyoujiNedan">3&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid10">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #028be0;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(4);">
+          <div class="item-buy">
+            <img src="img/itempicture/item4.png">
+
+            <div class="item-buyHyouji">コンピュータ
+              <div class="item-buyHyoujiNedan">4&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid11">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #016ee2;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(5);">
+          <div class="item-buy">
+            <img src="img/itempicture/item5.png">
+
+            <div class="item-buyHyouji">釣り場
+              <div class="item-buyHyoujiNedan">5&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid12">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #0210d1;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(6);">
+          <div class="item-buy">
+            <img src="img/itempicture/item6.png">
+
+            <div class="item-buyHyouji">銀行
+              <div class="item-buyHyoujiNedan">6&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid13">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: #ad00b6;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(7);">
+          <div class="item-buy">
+            <img src="img/itempicture/item7.png">
+
+            <div class="item-buyHyouji">雪
+              <div class="item-buyHyoujiNedan">7&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid14">
-          <i class="far fa-hand-pointer upgrade-icon upgrade-iconGold"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(8);">
+          <div class="item-buy">
+            <img src="img/itempicture/item8.png">
+
+            <div class="item-buyHyouji">クジラ
+              <div class="item-buyHyoujiNedan">8&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
         </div>
-        <div class="grid-settei grid15">
-          <i class="far fa-hand-pointer upgrade-icon" style="color: black;"></i>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(9);">
+          <div class="item-buy">
+            <img src="img/itempicture/item9.png">
+
+            <div class="item-buyHyouji">工場
+              <div class="item-buyHyoujiNedan">9&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(10);">
+          <div class="item-buy">
+            <img src="img/itempicture/item10.png">
+
+            <div class="item-buyHyouji">３Dプリンター
+              <div class="item-buyHyoujiNedan">10&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(11);">
+          <div class="item-buy">
+            <img src="img/itempicture/item11.png">
+
+            <div class="item-buyHyouji">グラフィックボード
+              <div class="item-buyHyoujiNedan">11&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(12);">
+          <div class="item-buy">
+            <img src="img/itempicture/item12.png">
+
+            <div class="item-buyHyouji">原子結合機
+              <div class="item-buyHyoujiNedan">12&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(13);">
+          <div class="item-buy">
+            <img src="img/itempicture/item13.png">
+
+            <div class="item-buyHyouji">タイムマシン
+              <div class="item-buyHyoujiNedan">13&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(14);">
+          <div class="item-buy">
+            <img src="img/itempicture/item14.png">
+
+            <div class="item-buyHyouji">JS Console
+              <div class="item-buyHyoujiNedan">14&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+        <div class="item-buyHyoujiSpace" onclick="item_buy(15);">
+          <div class="item-buy">
+            <img src="img/itempicture/item15.png">
+
+            <div class="item-buyHyouji">テッセラクト
+              <div class="item-buyHyoujiNedan">15&nbsp;しろくま</div>
+            </div>
+          </div>
+          <div class="item-syojisuu">
+            0
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
 
-    </div>
-    </div>
-    <div class="item-buyUeSpace">
-      <b style="padding-top: 2px;">アイテム</b>
-    </div>
-    <div class="item-buySpace">
-      <div class="item-buyHyoujiSpace" onclick="item_buy(1);">
-        <div class="item-buy">
-         <img src="img/itempicture/item1.png">
-        
-        <div class="item-buyHyouji">シャーペン
-          <div class="item-buyHyoujiNedan">1&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-      <div class="item-buyHyoujiSpace" onclick="item_buy(2);">
-        <div class="item-buy">
-         <img src="img/itempicture/item2.png">
-        
-        <div class="item-buyHyouji">元素記号したじき
-          <div class="item-buyHyoujiNedan">2&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(3);">
-        <div class="item-buy">
-         <img src="img/itempicture/item3.png">
-        
-        <div class="item-buyHyouji">家
-          <div class="item-buyHyoujiNedan">3&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(4);">
-        <div class="item-buy">
-         <img src="img/itempicture/item4.png">
-        
-        <div class="item-buyHyouji">コンピュータ
-          <div class="item-buyHyoujiNedan">4&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(5);">
-        <div class="item-buy">
-         <img src="img/itempicture/item5.png">
-        
-        <div class="item-buyHyouji">釣り場
-          <div class="item-buyHyoujiNedan">5&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(6);">
-        <div class="item-buy">
-         <img src="img/itempicture/item6.png">
-        
-        <div class="item-buyHyouji">銀行
-          <div class="item-buyHyoujiNedan">6&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(7);">
-        <div class="item-buy">
-         <img src="img/itempicture/item7.png">
-        
-        <div class="item-buyHyouji">雪
-          <div class="item-buyHyoujiNedan">7&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(8);">
-        <div class="item-buy">
-         <img src="img/itempicture/item8.png">
-        
-        <div class="item-buyHyouji">クジラ
-          <div class="item-buyHyoujiNedan">8&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(9);">
-        <div class="item-buy">
-         <img src="img/itempicture/item9.png">
-        
-        <div class="item-buyHyouji">工場
-          <div class="item-buyHyoujiNedan">9&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(10);">
-        <div class="item-buy">
-         <img src="img/itempicture/item10.png">
-        
-        <div class="item-buyHyouji">３Dプリンター
-          <div class="item-buyHyoujiNedan">10&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(11);">
-        <div class="item-buy">
-         <img src="img/itempicture/item11.png">
-        
-        <div class="item-buyHyouji">グラフィックボード
-          <div class="item-buyHyoujiNedan">11&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(12);">
-        <div class="item-buy">
-         <img src="img/itempicture/item12.png">
-        
-        <div class="item-buyHyouji">原子結合機
-          <div class="item-buyHyoujiNedan">12&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(13);">
-        <div class="item-buy">
-         <img src="img/itempicture/item13.png">
-        
-        <div class="item-buyHyouji">タイムマシン
-          <div class="item-buyHyoujiNedan">13&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(14);">
-        <div class="item-buy">
-         <img src="img/itempicture/item14.png">
-        
-        <div class="item-buyHyouji">JS Console
-          <div class="item-buyHyoujiNedan">14&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-<div class="item-buyHyoujiSpace" onclick="item_buy(15);">
-        <div class="item-buy">
-         <img src="img/itempicture/item15.png">
-        
-        <div class="item-buyHyouji">テッセラクト
-          <div class="item-buyHyoujiNedan">15&nbsp;しろくま</div>
-          </div>
-        </div>
-        <div class="item-syojisuu">
-          0
-        </div>
-      </div>
-
-
-      
-</div>
-    
- </div>
-
- </div>
-</div> 
-
-    <script src="js/cookie.js"></script>
-    <script src="js/onload.js"></script>
-    <script src="js/console-help.js"></script> 
-    <script src="js/clicker.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/onload.js"></script>
+  <script src="js/console-help.js"></script>
+  <script src="js/clicker.js"></script>
 </body>
+
 </html>
